@@ -1,0 +1,245 @@
+/******* GENERAL *******/
+/* spacing on all sections */
+#about,
+#about-sophie,
+#about-kasa,
+#about-eco,
+#skills,
+#showcase,
+#portfolio,
+#contact {
+  margin-top: 4rem;
+  padding-top: 4rem;
+}
+#about h2,
+#about-sophie h2,
+#about-kasa h2,
+#about-eco h2,
+#skills h2,
+#showcase h2,
+#portfolio h2,
+#contact h2 {
+  margin-bottom: 3rem;
+}
+#contact {
+  padding-bottom: 4rem;
+}
+header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+.fixed-top {
+  position: absolute;
+}
+.navbar-brand-sophie {
+  color: black !important;
+}
+
+.navbar-brand-kasa {
+  color: black !important;
+}
+
+.nav-link-sophie {
+  color: black !important;
+}
+.nav-link-kasa {
+  color: black !important;
+}
+
+.navbar-brand {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+/* display background dark color on navbar scroll */
+.navbarScroll.navbarDark {
+  background-color: #929292;
+}
+
+/* hero background image */
+.bgimage {
+  height: 100vh;
+  max-height: 900px;
+  background: url("images/mainbanner.webp");
+  background-size: cover;
+  position: relative;
+}
+
+#sophiehome {
+  height: 100vh;
+  max-height: 900px;
+  background: url("images/sophiebanner.webp");
+  background-size: cover;
+  position: relative;
+}
+
+#kasahome {
+  height: 100vh;
+  max-height: 900px;
+  background: url("images/kasabanner.webp");
+  background-size: cover;
+  position: relative;
+}
+
+#ecohome {
+  height: 100vh;
+  max-height: 900px;
+  background: url("images/ecobanner.webp");
+  background-size: cover;
+  position: relative;
+}
+
+/* text css above hero image*/
+.hero_title {
+  font-size: 4.5rem;
+  background-color: rgba(0, 0, 0, 0.002) !important;
+}
+.hero_desc {
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.002) !important;
+}
+.kasa_title {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.eco_title {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.kasa_desc {
+  color: #ff6060;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+}
+.eco_desc {
+  color: #e6d5cd;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.sophie_text {
+  color: #f5f5dc;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* about */
+.imageAboutPage {
+  width: 100%;
+}
+.imageAboutPage {
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* skills */
+.skillsText.card {
+  height: 350px;
+  cursor: pointer;
+}
+.skillsText img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+#skills p {
+  text-align: center;
+}
+.skillsIcon {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+}
+.card-title {
+  text-align: center;
+}
+.card:hover .skillsIcon {
+  color: #008000;
+}
+.skillsText:hover {
+  border: 1px solid #008000;
+}
+
+/* portfolio */
+#portfolio p {
+  text-align: center;
+}
+
+.btn-success2 {
+  color: #fff;
+  background-color: #333333;
+  border-color: #333333;
+}
+
+.btn-success2:hover {
+  color: #fff;
+  background-color: #222222;
+  border-color: #222222;
+}
+
+.fa-github {
+  margin-right: 0.5em;
+}
+
+.carousel-item img {
+  .carousel-item img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.carousel-item {
+  transition: transform 0.9s ease-in-out; /* Adjust the duration and easing function */
+}
+
+/* Customize carousel indicators */
+.carousel-indicators button {
+  background-color: gray;
+}
+
+.carousel-indicators .active {
+  background-color: grey;
+}
+
+/* Remove default background color from arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  background: none;
+}
+
+/* Customize the color of the arrow icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent;
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(-30deg) brightness(0%)
+    contrast(100%);
+}
+
+/* contact */
+.contactColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactColumn i {
+  color: #198754;
+}
+
+/* footer */

@@ -1,0 +1,72 @@
+[
+  {
+    "image": "sophie1.webp",
+    "alt": "Logo Sophie",
+    "title": "Sophie Bluel",
+    "text": "Développement d’un portfolio moderne et intuitif pour l’architecte d’intérieur Sophie Bluel.",
+    "link": "sophiebluel.html",
+    "github": "https://github.com/Kiyaro-1/Portfolio-Sophie-Bluel.git",
+    "logos": [
+      {
+        "src": "images/logo_html_small.webp",
+        "alt": "HTML"
+      },
+      {
+        "src": "images/logo_css_small.webp",
+        "alt": "CSS"
+      },
+      {
+        "src": "images/Logo_javascript_small.webp",
+        "alt": "JS"
+      }
+    ]
+  },
+  {
+    "image": "image3.webp",
+    "alt": "image kasa",
+    "title": "Kasa",
+    "text": "Développement d'une application web React de location d'appartements pour Kasa.",
+    "link": "kasa.html",
+    "github": "https://github.com/Kiyaro-1/Kasa---Code-front-end.git",
+    "logos": [
+      {
+        "src": "images/logo_html_small.webp",
+        "alt": "HTML"
+      },
+      {
+        "src": "images/logo_css_small.webp",
+        "alt": "CSS"
+      },
+      {
+        "src": "images/Logo_javascript_small.webp",
+        "alt": "JS"
+      },
+      {
+        "src": "images/logo_react_small.webp",
+        "alt": "REACTJS"
+      }
+    ]
+  },
+  {
+    "image": "image2.webp",
+    "alt": "image eco bliss bath",
+    "title": "Eco Bliss Bath",
+    "text": "Automatisation des tests pour le site de vente du savon solide Eco Bliss Bath.",
+    "link": "ecoblissbath.html",
+    "github": "https://github.com/Kiyaro-1/Eco_Bless_Bath_Test_Campaign.git",
+    "logos": [
+      {
+        "src": "images/Logo_javascript_small.webp",
+        "alt": "JS"
+      },
+      {
+        "src": "images/logo_react_small.webp",
+        "alt": "REACT"
+      },
+      {
+        "src": "images/logo_cypress_small.webp",
+        "alt": "CYPRESS"
+      }
+    ]
+  }
+]

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Portfolio Yassine</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Yassine Gamrani, a junior front-end web developer. Explore my projects, skills, and contact information."
+    />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.min.css" />
+  </head>
+
+  <body>
+    <header role="banner">
+      <!-- navbar -->
+      <nav
+        role="navigation"
+        class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Yassine</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">A propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Compétences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contactez-moi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- main banner -->
+      <section class="bgimage" id="home">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+              <h1 class="hero_title">Salut, moi c'est Yassine</h1>
+              <h2 class="hero_desc">Je suis développeur web junior</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about section-->
+      <section id="about">
+        <div class="container mt-4 pt-4">
+          <h2 class="text-center">A propos</h2>
+          <div class="row mt-4">
+            <div class="col-lg-4">
+              <img src="images/person.webp" class="imageAboutPage" alt="" />
+            </div>
+
+            <div class="col-lg-8">
+              <p>
+                Depuis toujours, l'informatique me fascine, mais c'est
+                réellement ma grande sœur, qui a construit sa carrière dans ce
+                domaine, qui m'a poussé à suivre cette voie. En suivant ses pas,
+                j'ai découvert ma passion pour la programmation et le
+                développement logiciel.
+              </p>
+              <div class="row mt-3">
+                <div class="col-md-6">
+                  <ul>
+                    <li>Nom: Yassine Gamrani</li>
+                    <li>Age: 23</li>
+                    <li>Profession: Développeur Front-End</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li>Localisation: Maroc, Marrakesh</li>
+                    <li>
+                      Langues: Arabe (natif), Anglais (courant), Français (B2)
+                    </li>
+                    <li>Passions: Programmation, Basketball, Jeux Vidéo</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <p>
+                  J'ai suivi une formation de testeur de logiciels chez
+                  OpenClassrooms, où j'ai acquis des compétences solides en test
+                  et validation de logiciels. Cette formation m'a permis de
+                  travailler sur des projets variés, tels que la création de
+                  sites web en HTML, CSS et JavaScript, le développement d'une
+                  application web avec React JS, ainsi que la planification et
+                  la gestion du développement de sites pour des clients. J'ai
+                  également réalisé des campagnes de tests, automatisé des tests
+                  et élaboré des stratégies de test pour différents projets.
+                </p>
+                <p>
+                  En dehors du travail, je suis passionné par le basket-ball,
+                  les voyages, ainsi que par la programmation et la résolution
+                  de problèmes. Ces activités enrichissent ma vie personnelle et
+                  professionnelle, me permettant de rester créatif et motivé.
+                </p>
+                <p>
+                  Mon objectif est de progresser dans ma carrière pour devenir
+                  un jour Product Owner ou Chef de Projet, afin de pouvoir
+                  apporter une valeur ajoutée plus importante aux projets sur
+                  lesquels je travaille.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills section-->
+      <section id="skills">
+        <div class="container">
+          <h2 class="text-center">Mes compétences</h2>
+        </div>
+      </section>
+
+      <!-- portfolio section-->
+      <section id="portfolio">
+        <div class="container mt-3">
+          <h2 class="text-center">Mes projets</h2>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- contact section-->
+      <section id="contact">
+        <div class="container mt-3 contactContent">
+          <h2 class="text-center">Contactez-moi</h2>
+          <div class="row">
+            <div class="col-lg-4 mt-4 contactColumn">
+              <i class="fa-solid fa-phone fa-4x"></i>
+              <h3>Téléphone</h3>
+              <p>06-66-38-32-23</p>
+            </div>
+            <div class="col-lg-4 mt-4 contactColumn">
+              <i class="fa-regular fa-envelope fa-4x"></i>
+              <h3>Adresse email</h3>
+              <p>yassine.gamrani.14@gmail.com</p>
+            </div>
+            <div class="col-lg-4 mt-4 contactColumn">
+              <i class="fa-brands fa-linkedin-in fa-4x"></i>
+              <h3>LinkedIn</h3>
+              <p>Yassine Gamrani</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.min.js"></script>
+  </body>
+</html>
