@@ -96,20 +96,92 @@ header {
   position: relative;
 }
 
-/* text css above hero image*/
 .hero_title {
   font-size: 4.5rem;
   background-color: rgba(0, 0, 0, 0.002) !important;
+  animation-name: bounceIn;
+  animation-delay: 0.2s;
 }
 .hero_desc {
   font-size: 2rem;
   background-color: rgba(0, 0, 0, 0.002) !important;
 }
-.kasa_title {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+.home_title {
+  text-transform: uppercase;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear 1 forwards; /* Play once and retain the final state */
+  position: relative;
+}
+.home_desc {
+  text-transform: uppercase;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear 1 forwards; /* Play once and retain the final state */
+  position: relative;
+}
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-text-fill-color: #ffffff;
+    background-position-x: 500%;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.animated-title {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.sophie-title {
+  animation-name: bounceIn;
+  animation-delay: 0.2s;
+}
+.sophie-desc {
+  animation-name: slideIn;
+  animation-delay: 0.4s;
+}
+
+@keyframes bounceIn {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .eco_title {
@@ -117,14 +189,66 @@ header {
   height: auto;
   display: block;
   margin: 0 auto;
-}
-.kasa_desc {
-  color: #ff6060;
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+  animation: zoomIn 1s ease-out;
 }
 .eco_desc {
   color: #e6d5cd;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+  animation: rotateIn 1s ease-in;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-200deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+.kasa_title {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  animation: slideIn 1s ease-out;
+}
+.kasa_desc {
+  color: #ff6060;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .hero-text {
   text-align: center;
@@ -185,13 +309,13 @@ header {
 .btn-success2 {
   color: #fff;
   background-color: #333333;
-  border-color: #333333;
+  border-color: #222222;
 }
 
 .btn-success2:hover {
   color: #fff;
   background-color: #222222;
-  border-color: #222222;
+  border-color: #111111;
 }
 
 .fa-github {
@@ -202,11 +326,9 @@ header {
 }
 
 .carousel-item img {
-  .carousel-item img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-  }
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .carousel-item {
