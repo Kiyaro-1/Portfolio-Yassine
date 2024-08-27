@@ -95,7 +95,7 @@ function portfolioCardTemplate(item) {
             </div>
             <p data-cy="project-description" class="card-text">${item.text}</p>
             <div class="text-center">
-                <a href="${item.link}" data-cy="project-link" class="btn btn-success">Voir Projet</a>
+                <a href="${item.link}" data-cy="project-link" class="btn btn-success"><i class="fa-solid fa-globe"></i>Voir Projet</a>
                 <a href="${item.github}" data-cy="project-github_link" class="btn btn-success2"><i class="fa-brands fa-github"></i>Voir Code</a>
             </div>
         </div>
