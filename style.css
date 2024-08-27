@@ -67,9 +67,31 @@ header {
 .bgimage {
   height: 100vh;
   max-height: 900px;
-  background: url("images/mainbanner.webp");
+  background: url("images/mainbanner.webp") no-repeat center center;
   background-size: cover;
   position: relative;
+  animation: fade-in 2s ease-out forwards, slide-in 2s ease-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 #sophiehome {
@@ -78,6 +100,18 @@ header {
   background: url("images/sophiebanner.webp");
   background-size: cover;
   position: relative;
+  animation: zoom-fade-in 2s ease-out forwards;
+}
+
+@keyframes zoom-fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 #kasahome {
@@ -86,6 +120,20 @@ header {
   background: url("images/kasabanner.webp");
   background-size: cover;
   position: relative;
+  animation: parallax-fade-in 2s ease-out forwards;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+@keyframes parallax-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 #ecohome {
@@ -94,6 +142,21 @@ header {
   background: url("images/ecobanner.webp");
   background-size: cover;
   position: relative;
+  animation: zoom-blur-in 3s ease-out forwards;
+  background-position: center center;
+}
+
+@keyframes zoom-blur-in {
+  0% {
+    transform: scale(1.1);
+    filter: blur(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
 
 .hero_title {
@@ -116,7 +179,7 @@ header {
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: shine 5s linear 1 forwards; /* Play once and retain the final state */
+  animation: shine 5s linear 1 forwards;
   position: relative;
 }
 .home_desc {
@@ -129,7 +192,7 @@ header {
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: shine 5s linear 1 forwards; /* Play once and retain the final state */
+  animation: shine 5s linear 1 forwards;
   position: relative;
 }
 @keyframes shine {
@@ -332,7 +395,7 @@ header {
 }
 
 .carousel-item {
-  transition: transform 0.9s ease-in-out; /* Adjust the duration and easing function */
+  transition: transform 0.9s ease-in-out;
 }
 
 /* Customize carousel indicators */
