@@ -11,7 +11,7 @@ describe("Portfolio test page accueil", () => {
   };
 
   it("Verify projects and their showcase pages", () => {
-    cy.visit("http://127.0.0.1:5500/index.html");
+    cy.visit("https://kiyaro-1.github.io/Portfolio-Yassine/index.html");
 
     cy.get('[data-cy="project-home"]').then(($articles) => {
       const articleCount = $articles.length;
